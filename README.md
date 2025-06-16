@@ -23,7 +23,7 @@ https://github.com/Fadd3y/NotificationService
         spring.datasource.username=postgres
         spring.datasource.password=admin
 ```
-- Скачать и разархивировать приложенный архив с Kafka в папку. Желательно в корень диска, иначе могут быть ошибки типа «The input line is too long. The syntax of the command is incorrect».
+- Скачать и разархивировать приложенный архив с Kafka в папку (https://disk.yandex.ru/d/GOJCXpX7qXfLeg). Желательно в корень диска, иначе могут быть ошибки типа «The input line is too long. The syntax of the command is incorrect».
 
 - Запустить start.bat(Windows)/start.sh(Linux. сам не проверял), который запускает Kafka. (если пишет что-то типа [2025-06-16 17:53:36,027] INFO [BrokerLifecycleManager id=1] Unable to register broker 1 because the controller returned error DUPLICATE_BROKER_REGISTRATION (kafka.server.BrokerLifecycleManager) не стоит беспокоится, Kafka все равно запустится через какое то время)
 
