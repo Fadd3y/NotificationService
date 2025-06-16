@@ -47,8 +47,8 @@ https://github.com/Fadd3y/NotificationService
 - Получение всех пользователей   __GET /api/users__     
 
 - Обновление полей пользователя  __PATCH /api/users/{id}__
-{
 ```
+{
     "name": "example",
     "email": "example@gmail.com",
     "age": 17
