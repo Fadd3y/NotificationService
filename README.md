@@ -2,8 +2,8 @@
 
 - Клонировать оба репозитория.
 
-Микросервис USerService:
-https://github.com/Fadd3y/SpringUserService
+Микросервис UserService:
+https://github.com/Fadd3y/SpringUserService/tree/dev
 
 Микросервис NotifictionService:
 https://github.com/Fadd3y/NotificationService
