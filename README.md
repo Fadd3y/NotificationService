@@ -1,5 +1,4 @@
  ## Для корректной работы нужно:
-
 - Клонировать оба репозитория.
 
 Микросервис UserService:
@@ -31,6 +30,9 @@ https://github.com/Fadd3y/NotificationService
 
 - Теперь, вероятно, можно пользоваться.
 
+## Для корректной работы тестов нужно:
+- Запустить Docker Desktop
+  
 ## API
 ### SpringUserService http://localhost:8080
 
