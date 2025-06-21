@@ -1,9 +1,9 @@
 package ru.practice.notificationservice;
 
+import org.apache.commons.validator.routines.EmailValidator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.JavaMailSenderImpl;
+import org.springframework.context.annotation.Bean;
 
 import java.util.Properties;
 
@@ -14,4 +14,8 @@ public class NotificationServiceApplication {
         SpringApplication.run(NotificationServiceApplication.class, args);
     }
 
+    @Bean
+    public EmailValidator emailValidator() {
+        return EmailValidator.getInstance();
+    }
 }

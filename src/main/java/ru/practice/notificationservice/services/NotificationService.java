@@ -1,5 +1,6 @@
 package ru.practice.notificationservice.services;
 
+import jakarta.annotation.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaListener;
@@ -34,7 +35,7 @@ public class NotificationService {
         log.info("Запрос на отправку уведомления о удалении аккаунта: {}", email);
 
         try {
-            emailSenderService.sendMessage(email, "Аккаунт удален", "Здравствуйте! Ваш аккаунт был удалён.");
+            emailSenderService.sendMessage(email, "Аккаунт удален.", "Здравствуйте! Ваш аккаунт был удалён.");
         } catch (Exception e) {
             log.error("Уведомление о удалении не отправлено на почту: {}. Причина: {}", email, e.toString());
             throw new RuntimeException(e);
