@@ -1,6 +1,5 @@
 package ru.practice.notificationservice.services;
 
-import jakarta.annotation.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaListener;
