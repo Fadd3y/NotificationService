@@ -24,7 +24,7 @@ public class NotificationService {
             emailSenderService.sendMessage(email, "Аккаунт создан.", "Здравствуйте! Ваш аккаунт на сайте ваш сайт был успешно создан.");
         } catch (Exception e) {
             log.error("Уведомление о создании не отправлено на почту: {}. Причина: {}", email, e.toString());
-            throw new RuntimeException(e);
+            return;
         }
 
         log.info("Уведомление о создании отправлено на почту: {}", email);
@@ -38,7 +38,7 @@ public class NotificationService {
             emailSenderService.sendMessage(email, "Аккаунт удален.", "Здравствуйте! Ваш аккаунт был удалён.");
         } catch (Exception e) {
             log.error("Уведомление о удалении не отправлено на почту: {}. Причина: {}", email, e.toString());
-            throw new RuntimeException(e);
+            return;
         }
 
         log.info("Уведомление о удалении отправлено на почту: {}", email);
