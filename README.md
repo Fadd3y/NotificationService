@@ -34,6 +34,11 @@ https://github.com/Fadd3y/NotificationService
 - Запустить Docker Desktop
   
 ## API
+Для теста UserService
+http://localhost:8080/swagger-ui/index.html#/
+
+Для теста NotificationService
+http://localhost:8081/swagger-ui/index.html#/
 ### SpringUserService http://localhost:8080
 
 - Создание пользователя          __POST /api/users__
